@@ -1,7 +1,10 @@
 import { View } from './view.js';
 export class NegociacoesView extends View {
+    update(model) {
+        this.elemento.innerHTML = this.template(model);
+    }
     template(model) {
-        return /* html */ `
+        return `
       <table class="table table-hover table-bordered">
         <thead>
           <tr>
@@ -13,22 +16,22 @@ export class NegociacoesView extends View {
         <tbody>
           ${model
             .lista()
-            .map((negociacao) => /* html */ `
+            .map((negociacao) => `
             <tr>
               <td>
-                ${new Intl.DateTimeFormat().format(negociacao.data)}
+                ${this.formatar(negociacao.data)}
               </td>
               <td>${negociacao.quantidade}</td>
               <td>${negociacao.valor}</td>
             </tr>
             `)
             .join('')}
-        </tbody>
+            </tbody>
       </table>    
     `;
     }
-    update(model) {
-        this.elemento.innerHTML = this.template(model);
+    formatar(data) {
+        return new Intl.DateTimeFormat().format(data);
     }
 }
 //# sourceMappingURL=negociacoes-view.js.map
