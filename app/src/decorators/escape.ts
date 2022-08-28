@@ -8,11 +8,11 @@ export function escapar(
     let retorno = Reflect.apply(metodoOriginal, this, args)
 
     if (typeof retorno === 'string') {
-      console.log(
-        `@escapar em ação na classe ${
-          this.constructor.name
-        } para o método ${String(propertyKey)}`,
-      )
+      // console.log(
+      //   `@escapar em ação na classe ${
+      //     this.constructor.name
+      //   } para o método ${String(propertyKey)}`,
+      // )
 
       retorno = retorno.replace(/<script>[\s\S]*?<script>/, '')
     }
