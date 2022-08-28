@@ -1,19 +1,19 @@
+import { inspect } from '../decorators/inspect.js'
+import { logarTempoDeExecucao } from '../decorators/logar-tempo-de-execucao.js'
+
 export abstract class View<T = string> {
   protected elemento: HTMLElement
-  private escapar: boolean
 
-  constructor(seletor: string, escapar = false) {
+  constructor(seletor: string) {
     this.elemento = document.querySelector(seletor) as HTMLElement
-    this.escapar = escapar
   }
 
   protected abstract template(model: T): string
 
+  @inspect
+  @logarTempoDeExecucao(true)
   public update(model: T) {
-    let template = this.template(model)
-    if (this.escapar) {
-      template = template.replace(/<script>[\s\S]*?<script>/, '')
-    }
+    const template = this.template(model)
     this.elemento.innerHTML = template
   }
 }
