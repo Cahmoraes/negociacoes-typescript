@@ -9,7 +9,7 @@
 Projeto construído na trilha de formação Typescript da Alura.
 <p align="center">
   <a href="https://cursos.alura.com.br/user/ike-moraes93/degree-typescript-309729/certificate">
-    <img src="https://cursos.alura.com.br/user/ike-moraes93/degree-typescript-309729/certificate" alt="certificado">
+    <img src="https://github.com/Cahmoraes/negociacoes-typescript/blob/main/assets/certificado.jpg" alt="certificado">
   </a>
 <p/>
 
