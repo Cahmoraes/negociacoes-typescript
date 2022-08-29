@@ -29,5 +29,6 @@ module.exports = {
         semi: false,
       },
     ],
+    'no-use-before-define': 'off',
   },
 }

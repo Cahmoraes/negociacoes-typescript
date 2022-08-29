@@ -1,3 +1,3 @@
-export interface Imprimivel {
+export interface IImprimivel {
   paraTexto(): string
 }
