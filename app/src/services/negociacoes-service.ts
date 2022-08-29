@@ -1,5 +1,5 @@
-import { INegociacoesDoDia } from '../interfaces/negociacao-do-dia'
-import { Negociacao } from '../models/negociacao'
+import { INegociacoesDoDia } from '../interfaces/negociacao-do-dia.js'
+import { Negociacao } from '../models/negociacao.js'
 
 export class NegociacoesService {
   public async obterNegociacoesDoDia(): Promise<Negociacao[]> {
