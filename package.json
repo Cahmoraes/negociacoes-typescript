@@ -1,5 +1,6 @@
 {
   "name": "alurabank",
+  "homepage": "https://cahmoraes.github.io/negociacoes-typescript/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +10,9 @@
     "start": "concurrently \"npm run watch\" \"npm run server\"",
     "compile": "tsc",
     "watch": "tsc -w",
-    "lint": "eslint --ext .ts --fix"
+    "lint": "eslint --ext .ts --fix",
+    "predeploy": "npm run compile",
+    "deploy": "gh-pages -d ./app/dist"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +27,7 @@
     "eslint-plugin-n": "^15.2.5",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.1",
+    "gh-pages": "^4.0.0",
     "lite-server": "^2.6.1",
     "prettier": "^2.7.1",
     "typescript": "^4.2.2"
