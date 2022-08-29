@@ -22,7 +22,7 @@ Projeto construído na trilha de formação Typescript da Alura.
 ### :book: Aprendizado
 - Com o intuito de praticar o uso de Typescript, aprimorei minhas habilidades refazendo esta formação.
 - As principais habilidades que adquiri ao longo desta formação, foi a configuração de um ambiente utilizando ESlint em conjunto com Prettier e editorconfig.
-- Aprendi regras, configurações, plugins e extensões para construir um ambiente de desenvolvimento com linters e formatadores.
+- Aprendi regras, configurações, plugins e extensões para construir um ambiente de desenvolvimento com linters e formatadores. Esse aprendizado não foi ensinado ao longo do curso. Usei a oportunidade do projeto para aprendê-la por fora.
 
 ## :computer: Tecnologias utilizadas
 
